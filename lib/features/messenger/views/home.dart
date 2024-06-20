@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:z_messenger/features/messenger/views/widgtes/ChatWidget.dart';
 import 'package:z_messenger/features/messenger/views/widgtes/dailyNotes.dart';
 import 'package:z_messenger/features/messenger/views/widgtes/drawer.dart';
+import 'package:z_messenger/features/messenger/views/widgtes/navbar.dart';
 
 class MessengerHome extends StatelessWidget {
   const MessengerHome({super.key});
@@ -13,6 +14,7 @@ class MessengerHome extends StatelessWidget {
       themeMode: ThemeMode.dark,
       theme: ThemeData.dark(),
       home: Scaffold(
+        bottomNavigationBar: const ZNavbar(),
         drawer: const ZDrawer(),
         backgroundColor: Colors.black,
         appBar: AppBar(
