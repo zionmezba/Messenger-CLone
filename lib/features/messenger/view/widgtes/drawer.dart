@@ -1,3 +1,4 @@
+import 'package:iconsax/iconsax.dart';
 import 'package:flutter/material.dart';
 
 class ZDrawer extends StatelessWidget {
@@ -25,9 +26,10 @@ class ZDrawer extends StatelessWidget {
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     ),
+                    SizedBox(width: 10),
                     Padding(
                       padding: EdgeInsets.only(right: 10.0),
-                      child: Icon(Icons.arrow_drop_down_outlined),
+                      child: Icon(Iconsax.arrow_down_1),
                     )
                   ],
                 ),
@@ -37,19 +39,19 @@ class ZDrawer extends StatelessWidget {
           ),
           const ListTile(
             title: Text("Chats"),
-            leading: Icon(Icons.message_rounded),
+            leading: Icon(Iconsax.message_21),
           ),
           const ListTile(
             title: Text("Marketplace"),
-            leading: Icon(Icons.house_rounded),
+            leading: Icon(Iconsax.shop),
           ),
           const ListTile(
             title: Text("Message Requests"),
-            leading: Icon(Icons.message_outlined),
+            leading: Icon(Iconsax.message_2),
           ),
           const ListTile(
             title: Text("Archive"),
-            leading: Icon(Icons.archive_rounded),
+            leading: Icon(Iconsax.archive),
           ),
           // const SizedBox(height: 10),
           SizedBox(
